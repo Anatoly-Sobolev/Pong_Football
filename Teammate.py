@@ -10,8 +10,8 @@ class Teammate:
                                 size_player, size_player)
         self.image = pygame.transform.scale(image, (size_player, size_player))
         self.color = color
-        self.speed_x = random.randint(1, 10) * random.choice([1, -1])
-        self.speed_y = random.randint(1, 10) * random.choice([1, -1])
+        self.speed_x = random.choice([5, -5, 10, -10])
+        self.speed_y = random.choice([5, -5, 10, -10])
 
     def move(self):
         self.rect.x += self.speed_x
