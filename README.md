@@ -16,8 +16,8 @@ W/S — вверх/вниз (Player 1)
 
 # Установка 
 Клонируй репозиторий:
-git clone https://github.com/ваш_ник/Pong_football.git
-cd Pong_football
+```git clone https://github.com/ваш_ник/Pong_football.git
+cd Pong_football```
 
 Установи зависимости (если потребуется):
 pip install pygame
