@@ -1,11 +1,17 @@
 import pygame
 pygame.init()
 
-speed_x = 30
-speed_y = 25
-paddle_speed = 40
 
 
+ball_speed = 30
+player_speed = 40
+
+
+
+
+speed_x = ball_speed
+speed_y = ball_speed * 8 // 10
+paddle_speed = player_speed
 info = pygame.display.Info()
 screen_w, screen_h = info.current_w, info.current_h
 
