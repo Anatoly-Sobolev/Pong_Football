@@ -20,8 +20,10 @@ W/S — вверх/вниз (Player 1)
 Клонируй репозиторий:
 
 
-```git clone https://github.com/ваш_ник/Pong_football.git
-cd Pong_football```
+```bash
+git clone https://github.com/ваш_ник/Pong_football.git
+cd Pong_football
+```
 
 
 Установи зависимости (если потребуется):
