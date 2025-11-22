@@ -29,7 +29,7 @@ W/S — вверх/вниз (Player 1)
 
 
 ```bash
-git clone https://github.com/Anatoly-Sobolev/Pong_football.git
+git clone https://github.com/Anatoly-Sobolev/Pong_Football.git
 cd Pong_football
 ```
 
