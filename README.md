@@ -27,8 +27,11 @@ cd Pong_football
 
 
 Установи зависимости (если потребуется):
-
+```bash
 pip install pygame
+```
 
 Запусти игру:
+```bash
 python main.py
+```
