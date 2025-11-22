@@ -1,5 +1,11 @@
 import pygame
 pygame.init()
+
+speed_x = 30
+speed_y = 25
+paddle_speed = 40
+
+
 info = pygame.display.Info()
 screen_w, screen_h = info.current_w, info.current_h
 
@@ -7,11 +13,10 @@ background = pygame.image.load('images/background.png')
 caption = "FOOTBALL GAME!"
 ball_size = 50
 ball_image = pygame.image.load('images/ball.png')
-speed_x = 20
-speed_y = 15
+
 paddle_w = 50
 paddle_h = 180
-paddle_speed = 25
+
 blue_player_image = pygame.image.load('images/blue_player.png')
 red_player_image = pygame.image.load('images/red_player.png')
 size_player = 150

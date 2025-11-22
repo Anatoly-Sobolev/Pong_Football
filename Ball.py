@@ -69,10 +69,10 @@ class Ball:
             new_teammate = Teammate('red', red_player_image)
             self.lst_of_teammate.append(new_teammate)
 
-        if 0 < self.speed_x < 10 or self.speed_x > 25: self.speed_x = 15
-        if -6 < self.speed_x < 0 or self.speed_x < -25: self.speed_x = -15
-        if 0 < self.speed_y < 6 or self.speed_y > 20: self.speed_y = 13
-        if -2 < self.speed_y < 0 or self.speed_y < -20: self.speed_y = -13
+        if 0 < self.speed_x < 15 or self.speed_x > 40: self.speed_x = 30
+        if -6 < self.speed_x < 0 or self.speed_x < -25: self.speed_x = -30
+        if 0 < self.speed_y < 15 or self.speed_y > 30: self.speed_y = 25
+        if -30 < self.speed_y < 0 or self.speed_y < -20: self.speed_y = -25
 
 
         if self.speed_x == 0 or self.speed_y == 0:
