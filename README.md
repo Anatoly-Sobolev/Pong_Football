@@ -11,15 +11,21 @@
 
 # Управление:
 Esc — выход из игры
+
 W/S — вверх/вниз (Player 1)
+
 ↑/↓ — вверх/вниз (Player 2)
 
 # Установка 
 Клонируй репозиторий:
+
+
 ```git clone https://github.com/ваш_ник/Pong_football.git
 cd Pong_football```
 
+
 Установи зависимости (если потребуется):
+
 pip install pygame
 
 Запусти игру:
