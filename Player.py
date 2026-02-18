@@ -1,8 +1,11 @@
 import pygame
 from Consts import *
 
+
 class Player:
-    def __init__(self, data, color, key_up, key_down, image_up ,image_down):
+    def __init__(self, data, color, key_up, key_down, image_up, image_down,
+                 joystick=None, axis=1, deadzone=0.2):
+
         self.rect = pygame.Rect(*data)
         self.key_up = key_up
         self.key_down = key_down
@@ -12,7 +15,10 @@ class Player:
         self.image_up = pygame.transform.scale(image_up, (paddle_w, paddle_h))
         self.image_down = pygame.transform.scale(image_down, (paddle_w, paddle_h))
         self.image = pygame.transform.scale(image_up, (paddle_w, paddle_h))
-
+        # новые атрибуты для джойстика
+        self.joystick = joystick      # объект джойстика или None
+        self.axis = axis              # индекс оси (обычно 1 для Y)
+        self.deadzone = deadzone      # порог чувствительности
 
 
     def draw(self, screen, ):
