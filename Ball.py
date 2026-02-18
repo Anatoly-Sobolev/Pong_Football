@@ -96,8 +96,3 @@ class Ball:
                 self.speed_y *= random.choice([-1, 1])
                 self.last_tuch = player.color
                 self.lst_of_teammate.remove(player)
-
-
-
-
-

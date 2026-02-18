@@ -3,7 +3,7 @@ pygame.init()
 
 
 
-ball_speed = 15
+ball_speed = 10
 player_speed = 25
 
 
