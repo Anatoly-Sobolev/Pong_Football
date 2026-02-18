@@ -40,7 +40,7 @@ class Screen:
         self.screen.blit(player1_score_surface, (screen_w / 4, 20))
         self.screen.blit(player2_score_surface, (3 * screen_w / 4, 20))
 
-    def game_over(self, red_player, blue_player, ball):
+    '''def game_over(self, red_player, blue_player, ball):
         if red_player.score == game_over_score or blue_player.score == game_over_score:
             pygame.mixer.stop()
 
@@ -60,7 +60,23 @@ class Screen:
             self.reset_game(blue_player, red_player, ball)
 
             back_music.play(loops=-1)
-            back_sounds.play(loops=-1)
+            back_sounds.play(loops=-1)'''
+
+    def game_over(self, red_player, blue_player, ball):
+        if red_player.score == game_over_score[0] or blue_player.score == game_over_score[0]:
+            pygame.mixer.stop()
+            winner = 'RED' if red_player.score == game_over_score[0] else 'BLUE'
+            text_game_over = f'{winner} PLAYER WIN'
+            font = pygame.font.Font(None, 150)
+            text_surface = font.render(text_game_over, True, winner)
+            text_rect = text_surface.get_rect()
+            text_rect.center = (screen_w // 2, screen_h // 2)
+            self.screen.blit(text_surface, text_rect)
+
+            pygame.display.update()
+            game_over_sound.play()
+            game_over_aplod.play()
+            pygame.time.wait(5000)  # после паузы просто возвращаемся в меню
 
     def reset_game(self, blue_player, red_player, ball):
 
